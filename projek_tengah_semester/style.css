@@ -17,7 +17,7 @@ body {
 
 .logo {
     font-weight: bold;
-    font-size: 22px;
+    font-size: 19px;
     letter-spacing: 2px;
 }
 
@@ -114,5 +114,12 @@ body {
 .card-galery:hover {
     transform: scale(1.05);
 }
+
+
+
+
+
+
+
 
 
