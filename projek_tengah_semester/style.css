@@ -171,7 +171,7 @@ body {
     .img2 {
         margin-left: 0;
         margin-right: 0;
-        max-width: 200px;          /* sedikit lebih besar di HP */
+        max-width: 200px;  
     }
 
     .link-list h1 {
@@ -180,6 +180,27 @@ body {
     }
 }
 
+p {
+    font-size: 17px;      
+    line-height: 1.6;      
+    margin-bottom: 12px;
+    color: #333;
+}
+
+
+@media (max-width: 600px) {
+    p {
+        font-size: 16px;  
+        text-align: justify;
+        padding: 0 10px;  
+    }
+}
+
+@media (max-width: 900px) {
+    p {
+        font-size: 17px;
+    }
+}
 
 
 
