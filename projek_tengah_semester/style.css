@@ -1,56 +1,110 @@
 body {
-    margin: 0;
-    font-family: "Georgia", serif;
-    background: linear-gradient(to bottom right, #ffffff, #fff8e1);
-    color: #3a3a3a;
+	margin: 0;
+	font-family: Arial, sans-serif;
+	background: #d6eff4;
+}
+.navbar{
+	background: #212121;
+	margin: 0;
+	padding: 20px 30px;
+}
+ 
+.logo{
+	font-size: 14pt;
+	font-weight: bold;
+	text-decoration: none;
+	color: white;
+}
+ 
+.container{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+ 
+.tombol{
+	display: none;
+	color: white;
+	font-size: 14pt;			
+}
+ 
+.tombol:hover{
+	cursor: pointer;
+}
+ 
+ 
+.menu{
+	margin: 0;
+	display: flex;
+	list-style: none;
+	padding: 0;			
+}
+ 
+.menu li{
+	padding-left: 0;
+	margin-right: 10px;
+}
+ 
+.menu li a{
+	padding:10px;
+	color: white;
+	text-decoration: none;
+	display: inline-block;
+}
+ 
+ 
+@media screen and (max-width: 768px) {
+	.menu {
+		display: none;
+	}
+ 
+	.menu.aktif{
+		display:inline-block;
+		position: absolute;
+		top: 64px;
+		background: #212121;
+		padding: 10px 20px;
+		right: 0;
+		left: 0;
+	}
+ 
+	.menu.aktif li a{
+		padding: 10px;
+		display: inline-block !important;
+	}
+ 
+	.tombol {
+		display: block;
+	}
 }
 
-.navbar {
-    background: #d4af37; 
-    color: white;
-    padding: 18px 30px;
+
+/* Slideshow */
+.slider-container {
+    width: 100%;
+    height: 350px; /* bebas kamu ubah */
+    overflow: hidden;
+    position: relative;
+}
+
+.slides {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    transition: transform 1s ease-in-out;
+    width: 100%;
+    height: 100%;
 }
 
-.logo {
-    font-weight: bold;
+.slides img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain; 
+    flex-shrink: 0;      
+    background: #ffe17e;    
 }
 
-.nav-links {
-    list-style: none;
-    display: flex;
-    gap: 25px;
-}
 
-.nav-links a {
-    color: white;
-    text-decoration: none;
-    font-size: 16px;
-    font-weight: bold;
-    transition: 0.3s;
-}
 
-.nav-links a:hover {
-    color: #fff8e1;
-    text-shadow: 0 0 5px #ffffff;
-}
-
-.card {
-    display: flex;
-    background: white;
-    margin: 40px;
-    border-radius: 15px;
-    padding: 25px;
-    gap: 20px;
-    border: 3px solid #d4af37; /* border emas */
-    box-shadow: 0 6px 15px rgba(0,0,0,0.2);
-    transition: 0.3s;
-}
-
-.card:hover {
+/* .card:hover {
     transform: translateY(-5px);
     box-shadow: 0 12px 25px rgba(0,0,0,0.25);
 }
@@ -111,7 +165,7 @@ body {
 
 .card-galery:hover {
     transform: scale(1.05);
-}
+} */
 
 
 
